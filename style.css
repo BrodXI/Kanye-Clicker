@@ -1,0 +1,77 @@
+.present {
+    color: red;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    opacity: 100;
+    animation: TextFadeOut 4s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes TextFadeOut {
+    0% {opacity: 100;}
+    99% {opacity: 0;}
+    100% {opacity: 0;display: none;}
+}
+
+body {
+    background-color: black;
+}
+
+#titlename {
+    color: blue;
+    font-size: 90px;
+    vertical-align: top;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#kanyejayz {
+    width: 400px;
+    height: 200px;
+}
+
+.title {
+    opacity: 0;
+    text-align: center;
+    animation: TitleFadeIn 5s;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+    justify-content: center;
+}
+
+@keyframes TitleFadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 100;}
+}
+
+#playbutton {
+    background-color: brown;
+    width: 230px;
+    height: 80px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display:block;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 0;
+}
+
+#playbutton:hover {
+    background-color: gray;
+    cursor: grab;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+#linktext {
+    text-decoration: none;
+    color: white;
+}
