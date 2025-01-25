@@ -36,3 +36,16 @@ setInterval(() => {
   document.getElementById('cookie-count').textContent = cookies;
 }, 1000);
 
+document.getElementById('cookieImg').addEventListener('click', function() {
+  const cookieImg = document.getElementById('cookieImg')
+
+  //check if anim already running
+  if ( !cookieImg.classList.contains('cookieAnimated') ) {
+    cookieImg.classList.toggle('cookieAnimated')
+    setTimeout(function() {
+    cookieImg.classList.toggle('cookieAnimated')
+    }, 800)
+  } else {
+    return;
+  }
+})

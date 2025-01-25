@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<div class="container">
-    <html lang="en">
-    <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanye Clicker</title>
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <div class="cookie-clicker" onclick="increaseCookies()">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMY-uDuYKJOfUHmA7pyXq6RPiFWKImT3NE2Q&s" alt="Cookie" style="width: 200px;" />
-      </div>
-      <div class="cookie-count">Dollars: <span id="cookie-count">0</span></div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cookie-clicker center">
+        <img id="cookieImg" class="cookie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMY-uDuYKJOfUHmA7pyXq6RPiFWKImT3NE2Q&s" alt="Cookie" style="width: 200px;" onclick="increaseCookies()" />
     </div>
     
-    <div class="sidebar">
+    <div class="sidebar center">
       <div class="panel">
+        <h2 class="cookie-count">Dollars: <span id="cookie-count">0</span></h2>
         <h2>Upgrades:</h2>
-        <button onclick="buyUpgrade(1)">Auto Record Clicker: $<span id="clicker1cost">10</span></button>
+        <button id="upgrade1" class="button" onclick="buyUpgrade(1)">Auto Record Clicker: $<span id="clicker1cost">10</span></button>
         <h3>Clickers: <span id="clickers">0</span></h3>
-        <button onclick="buyUpgrade(2)">Better ARC (Cost: 100)</button>
+        <button id="upgrade2" class="button" onclick="buyUpgrade(2)">Better ARC (Cost: 100)</button>
         <h2>Dollars Per Second: <span id="cps">0</span></h2>
       </div>
     </div>
     
     <script src="script.js"></script>
-    </body>
-    </html>
-    
-    
+</body>
+</html>
