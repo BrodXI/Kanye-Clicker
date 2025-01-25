@@ -6,6 +6,11 @@ body {
     background-color: azure;
 }
 
+body.dark {
+    background-color: #141414;
+    color: azure;
+}
+
 .cookieAnimated {
     animation: bounce .4s infinite alternate;
 }
