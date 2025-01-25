@@ -9,7 +9,7 @@
 <body>
   <div>
     <input type="checkbox" class="checkbox" id="checkbox">
-    <a style="background-color: black; color: azure; border-radius: 5px; padding: 3px;">Dark Mode</a>
+    <a>Theme Toggle</a>
   </div>
   
   <div class="cookie-clicker center">
@@ -20,13 +20,14 @@
       <div class="panel">
         <h2 class="cookie-count">Dollars: <span id="cookie-count">0</span></h2>
         <h2>Upgrades:</h2>
-        <button id="upgrade2" class="button" onclick="upgradeARC()">Better ARC: $<span id="arcUpgradeCost">50</span></button>
+        <button id="arcUpgradeButton" onclick="upgradeARC()">Better ARC: $<span id="arcUpgradeCost">50</span></button>
         <h3>Clickers: <span id="clickers">0</span></h3>
-        <button id="arcBuy" class="button" onclick="buyRecordClicker()">Auto Record Clicker: $<span id="arcCost">10</span></button>
+        <button id="arcBuyButton" onclick="buyRecordClicker()">Auto Record Clicker: $<span id="arcCost">10</span></button>
         <h2>Dollars Per Second: <span id="cps">0</span></h2>
       </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/unlockUpgrades.js"></script>
 </body>
 </html>
